@@ -1,0 +1,424 @@
+
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #F3F5FC;
+    font-family: 'Inter'; 
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: .1%;
+    top: 5%;
+}
+
+.areaIzquierdo{
+    position: absolute;
+    width: 55%;
+    height: 85%;
+   /* background: rgb(6, 1, 1);*/
+}
+
+.izquierdo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  /*  background: red;*/
+}
+
+.encriptarDesencriptar{
+    position: absolute;
+    width: 90%;
+    height: 39%;
+    top: 28%;
+    left: 22%;
+    border: none;
+    background: #F3F5FC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 40px;
+    
+}
+
+.encriptarDesencriptar::placeholder{
+    font-size: .9em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: #08438b;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 20%;
+    top: 79%;
+}
+
+.encriptar{
+    width: 40%;
+    border-radius: 24px;
+    font-size: 1.5em;
+    background: #0A3871;
+    color: #ebeef8;
+    padding: 15px;  
+}
+
+.desencriptar{
+    width: 40%;
+    border-radius: 24px;
+    font-size: 1.5em;
+    background:#D8DFE8;
+    color:#0A3871;
+    padding: 15px; 
+   
+}
+
+.informativo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width: 90%;
+    height: 18px;
+    left: 22%;
+    top: 70%;
+}
+
+.condiciones{
+    font-size: .7em;
+    width: 98%;
+}
+
+.areaDerecho{
+    position: absolute;
+    width: 45%;
+    height: 85%;
+    /*background: purple;*/
+    left: 55%;
+   
+}
+
+.derecho{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    /*background-color: rgb(18, 63, 228);*/
+}
+.textareaDerecho{
+    position: absolute;
+    top: 6%;
+    right: 24%;
+    width: 46%;
+    height: 65%;
+    background: "none";
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    border: none;
+    color: #4c4c4d;
+    font-size: 44px;
+    font-weight: bold;
+    background-size: 100%;
+    text-align: center;
+    
+    
+}
+.mujerBuscando{
+    position: absolute;
+    top: 10%;
+    left: 27.6%;
+    width: 50%;
+    height: 56%;
+    z-index: 1;
+}
+.mensajes{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    margin: 0;
+    top: 72.5%;
+    left: 26%;
+    text-align: center;
+    font-size: 1em;
+
+}
+.mensaje1{
+    width: auto;
+    height: 60%;
+    font-size: 1em;
+    font-weight: bold;  
+    padding-top: 0px;
+    margin-bottom: 8px;
+    background: #F3F5FC;
+}
+
+.mensaje1, .mensaje2{
+    margin: 0px;
+    height: 15%;
+    text-align: center;
+    align-items: center;
+   
+}
+
+.copiar{
+    position: absolute;
+    align-items: center;
+    top: 90%;
+    left: 39%;
+    width: 25%;
+    border-radius: 30px;
+    font-size: 1.4em;
+    background: #0A3871;
+    color: #ebeef8;
+    border: #4c4c4d;
+    z-index: 1;
+    
+}
+.piePagina{
+    position: absolute;
+    top: 83%;
+    width: 100%;
+    height: 30%;
+    background: #F3F5FC;
+}
+
+.personal{
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    margin: 1px;
+    padding: 3px;
+    font-size:1.4em;
+    font-weight: bold;
+
+}
+
+.imagenes{
+    position: absolute;
+    display: flex;
+    margin: 7px;
+    top: 12%;
+    left: 32%;
+    gap: 9px;
+}
+.linkedin, .instagram, .twitter, .github{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px; 
+    width: 4vw;
+    height: 4vw;   
+    border-radius: 20Px;
+    gap: 18px;
+}
+.github, .linkedin{
+    order: 0;
+}
+
+.instagram, .twitter{
+    order: 1;
+}
+
+@media screen and (max-width: 1020px){
+    body{
+    
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo{
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        margin: 10px;
+        left: .1%;
+        top: 5%;
+    }
+    
+    
+    .izquierdo{
+        position: absolute;
+        width: 100%;
+        height: 85%;
+
+    }
+    .encriptarDesencriptar::placeholder{
+        font-size: 1.2em;
+
+    }
+    .encriptarDesencriptar{
+        position: absolute;
+        width: 90%;
+        height: 25%;
+        top: 30%;
+        font-size: 1.2em;
+        font-weight: 50px;
+        left: 15%;
+    }
+    .informativo{
+        width: 100%;
+        height: 10%;
+        margin: 8px;
+        left: 13%;
+        top: 55%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        position: absolute;
+        
+    }
+    .condiciones{
+        width: 99%;
+        height: 40%;
+        margin: 0%;
+        align-items: center;
+    }
+
+    .btn{
+        padding: 0px;
+        gap: 15px;
+        width: 100%;
+        height: 40px;
+        left: 9%;
+        top: 74%;
+        align-items: center;
+    }
+
+    .encriptar{
+        width: 50%;
+        border-radius: 24px;
+        font-size: 1.1em;
+        background: #0A3871;
+        color: #ebeef8;
+        padding: 4px;  
+    }
+
+    .desencriptar{
+        width: 55%;
+        border-radius: 24px;
+        font-size: 1.1em;
+        background:#D8DFE8;
+        color:#0A3871;
+        padding: 4px; 
+    
+    }
+    .textareaDerecho{
+        width: 70%;
+        height: 35.7%;
+        top: 10%;
+        font-size: 1.2em;
+        font-weight: 50px;
+        right: 11%; 
+        z-index: 1;
+        align-items: center;
+    }
+
+    .mensajes{
+        margin: 0;
+        width: auto;
+        height: 30%;
+        top: 45.5%;
+        left: 26%;
+        text-align: center;
+        font-size: .6em; 
+        
+    }
+    .mensaje1{
+    
+        font-size: 1.4em;
+        font-weight: bold;  
+        padding-top: 15px;
+        padding-bottom: 10px;
+        background: #F3F5FC;
+        
+    }
+
+    .mensaje1, .mensaje2{
+        margin: 0px;
+        height: 15%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .mensaje2{
+        top: 46%;
+    }
+
+    .copiar{
+ 
+        top: 66%;
+        left: 28%;
+        width: 50%;
+        height: 8%;
+        border-radius: 30px;
+        font-size: 1.4em;
+        background: #0A3871;
+        color: #ebeef8;
+        border: #4c4c4d;
+        z-index: 1;
+        
+    }
+
+    .piePagina{
+        position: absolute;
+        top: 69%;
+        width: 100%;
+        height: 30%;
+        
+    }
+    
+    .personal{
+        position: absolute;
+        top: 4%;
+        left: 10%;
+        margin: 1px;
+        padding: 3px;
+        font-size:1.4em;
+        font-weight: bold;
+    
+    }
+    
+    .imagenes{
+        margin: 10px;
+        top: 12%;
+        left: 15%;
+        gap: 9px;
+    }
+    .linkedin, .instagram, .twitter, .github{
+        
+        margin-top: 10px;   
+        width: 10vw;
+        height: 16vw;
+        border-radius: 20Px;
+        gap: 18px;
+    }
+    .github, .linkedin{
+        order: 0;
+    }
+    
+    .instagram, .twitter{
+        order: 1;
+    }
+
+}

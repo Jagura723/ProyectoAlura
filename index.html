@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset - Acceso directo.lnk">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   
+  
+    <title>Enecriptador de texto</title>
+</head>
+<body>
+    <main>    
+        <header>
+            <img src="imagenes/Logo-1.png" alt="Logo alura Latam" class="logo">
+        </header>
+    
+            <section class="areaIzquierdo">
+                <div class="izquierdo">
+                    <textarea name="textEncDes" id="encriptarDesencriptar" cols="30" rows="10" class="encriptarDesencriptar" placeholder="Ingrese el texto que desea encriptar y/o desencriptar"></textarea>
+                    <div class="btn">
+                        <button class="encriptar" id="btnencriptar" onclick="btnEncrip()">Encriptar</button>
+                        <button class="desencriptar" id="desencriptar" onclick="btndencrip()">Desencriptar</button>
+                    </div>
+
+                    <div class="informativo">
+                        <img src="imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamación" class="exclamacion" id="never">
+                        <h6 class="condiciones">Este encriptador funciona exclusivamente con minusculas y sin acentos </h6>
+                    </div>
+                </div>
+            </section>
+
+            <section class="areaDerecho">
+                <textarea  id="resultado" cols="30" rows="10" class="textareaDerecho"></textarea>
+                <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
+                
+                <div class="mensajes">
+                    <h5 class="mensaje1" id="mensaje1">Ningún mensaje fue encontrado.</h5>
+                    <p class="mensaje2" id="mensaje2">Ingrese el texto que desea encriptar</p>
+                </div>
+            </section>
+        
+        
+        <footer class="piePagina">
+            <div class="contacto">
+                <h3 class="personal">Información de contacto</h3>
+            </div>
+            <div class="imagenes">
+                
+                <a href="https://www.linkedin.com/in/javier-gutierrez-ramirez-377768277/" target="_blank">
+                    <img src="imagenes/linquedin1.png" alt="logo LINKEDIN" class="linkedin">
+                </a>
+              
+                <a href="https://www.instagram.com/audomarojavier/" target="_blank">
+                    <img src="imagenes/instragram1.jpg" alt="Instagram" class="instagram">
+                </a>
+                
+                <a href="https://twitter.com/AudomaroJavier" target="_blank">
+                    <img src="imagenes/logo twitter.png" alt="Logo Twitter" class="twitter">
+                </a>
+                <a href="https://github.com/Jagura723/sopa.git">
+                    <img src="imagenes/logo Github.png" alt="Logo Github" class="github">
+                </a>
+            </div>
+        </footer>
+    </main>
+       
+</body>
+
+<script src="index.js">
+   
+</script>
+
+</html>
